@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741D8FA62BA38A0400F585A4 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D8FA52BA38A0400F585A4 /* LocationsView.swift */; };
+		741D8FA82BA38A2400F585A4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D8FA72BA38A2400F585A4 /* LocationsViewModel.swift */; };
 		74366E562BA22265009544A8 /* map_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74366E552BA22265009544A8 /* map_appApp.swift */; };
 		74366E582BA22265009544A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74366E572BA22265009544A8 /* ContentView.swift */; };
 		74366E5A2BA22265009544A8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74366E592BA22265009544A8 /* Item.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		741D8FA52BA38A0400F585A4 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		741D8FA72BA38A2400F585A4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		74366E522BA22265009544A8 /* map_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74366E552BA22265009544A8 /* map_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map_appApp.swift; sourceTree = "<group>"; };
 		74366E572BA22265009544A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		74366E682BA223B7009544A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				741D8FA52BA38A0400F585A4 /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 		74366E6A2BA223D7009544A8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				741D8FA72BA38A2400F585A4 /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				74366E582BA22265009544A8 /* ContentView.swift in Sources */,
 				74366E5A2BA22265009544A8 /* Item.swift in Sources */,
 				74366E6D2BA22414009544A8 /* Location.swift in Sources */,
+				741D8FA82BA38A2400F585A4 /* LocationsViewModel.swift in Sources */,
+				741D8FA62BA38A0400F585A4 /* LocationsView.swift in Sources */,
 				74366E562BA22265009544A8 /* map_appApp.swift in Sources */,
 				74366E6F2BA2244A009544A8 /* LocationsDataService.swift in Sources */,
 			);
