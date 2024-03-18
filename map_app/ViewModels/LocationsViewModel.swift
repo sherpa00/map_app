@@ -20,6 +20,8 @@ class LocationsViewModel: ObservableObject {
     
     @Published var mapPosition: MapCameraPosition
     
+    @Published var showLocationsList: Bool = false
+    
     private var mapSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     init() {
@@ -45,6 +47,19 @@ class LocationsViewModel: ObservableObject {
                     span: mapSpan
                 )
             )
+        }
+    }
+    
+    func toggleShowLocationsList() {
+        withAnimation(.easeInOut) {
+            showLocationsList.toggle()
+        }
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            showLocationsList = false
         }
     }
 }
