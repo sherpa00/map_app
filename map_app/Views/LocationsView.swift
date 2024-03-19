@@ -20,6 +20,19 @@ struct LocationsView: View {
             VStack(spacing: 0) {
                 // current map location name
                 header
+                
+                Spacer()
+                
+                ZStack {
+                    ForEach(vm.locations) { location in
+                        if vm.mapLocation == location {
+                            LocationsPreviewView(location: location)
+                                .shadow(color: Color.black.opacity(0.4), radius: 20)
+                                .padding()
+                                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                        }
+                    }
+                }
             }
             
         }
