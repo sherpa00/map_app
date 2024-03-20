@@ -12,16 +12,22 @@ struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
     
+    let maxIpadWidth: CGFloat? = 700
+    
     var body: some View {
         ZStack(alignment: .top) {
             mapView
                 
+                
             VStack(spacing: 0) {
                 header
+                    .frame(maxWidth: maxIpadWidth)
                 
                 Spacer()
                 
                 locationPreview
+                    .frame(maxWidth: maxIpadWidth)
+                    .frame(maxWidth: .infinity)
             }
         }
         .sheet(item: $vm.sheetLocation, onDismiss: nil) {location in

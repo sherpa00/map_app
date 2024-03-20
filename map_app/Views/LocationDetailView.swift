@@ -11,7 +11,11 @@ import MapKit
 struct LocationDetailView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
+    
     let location: Location
+    
+    // to detect dark mode or light mode
+    @Environment(\.colorScheme) var colorShema
     
     var body: some View {
         ScrollView {
@@ -23,6 +27,7 @@ struct LocationDetailView: View {
                 descriptionSection
                 Divider()
                 mapLayer
+                    .padding()
             }
         }
         .ignoresSafeArea()
@@ -41,7 +46,7 @@ extension LocationDetailView {
                 Image($0)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width)
+                    .frame(maxWidth: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
                     .clipped()
             }
         }
@@ -55,6 +60,7 @@ extension LocationDetailView {
             Text(location.name)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
+                .foregroundStyle(.primary)
             Text(location.cityName)
                 .font(.title3)
                 .foregroundStyle(.secondary)
@@ -100,12 +106,13 @@ extension LocationDetailView {
     }
     
     private var backButton: some View {
+        
         Button {
             vm.sheetLocation = nil
         } label: {
             Image(systemName: "xmark")
                 .font(.title)
-                .foregroundStyle(.primary)
+                .foregroundStyle(colorShema == .dark ? .white : .black)
                 .padding(16)
                 .background(.thickMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 10.0))
