@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741593322BAAFA4B0057A532 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741593312BAAFA4B0057A532 /* LocationDetailView.swift */; };
 		741D8FA62BA38A0400F585A4 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D8FA52BA38A0400F585A4 /* LocationsView.swift */; };
 		741D8FA82BA38A2400F585A4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D8FA72BA38A2400F585A4 /* LocationsViewModel.swift */; };
 		742B09C72BA984D70001E74A /* LocationsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B09C62BA984D70001E74A /* LocationsPreviewView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		741593312BAAFA4B0057A532 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		741D8FA52BA38A0400F585A4 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		741D8FA72BA38A2400F585A4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		742B09C62BA984D70001E74A /* LocationsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPreviewView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				744A53DF2BA818A8005CD11F /* LocationsListView.swift */,
 				742B09C62BA984D70001E74A /* LocationsPreviewView.swift */,
 				745D02F22BA9EB5F00543621 /* LocationMapAnnotationView.swift */,
+				741593312BAAFA4B0057A532 /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				74366E582BA22265009544A8 /* ContentView.swift in Sources */,
 				745D02F32BA9EB5F00543621 /* LocationMapAnnotationView.swift in Sources */,
+				741593322BAAFA4B0057A532 /* LocationDetailView.swift in Sources */,
 				74366E5A2BA22265009544A8 /* Item.swift in Sources */,
 				74366E6D2BA22414009544A8 /* Location.swift in Sources */,
 				741D8FA82BA38A2400F585A4 /* LocationsViewModel.swift in Sources */,

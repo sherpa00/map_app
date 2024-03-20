@@ -22,6 +22,8 @@ class LocationsViewModel: ObservableObject {
     
     @Published var showLocationsList: Bool = false
     
+    @Published var sheetLocation: Location? = nil
+    
     private var mapSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     init() {
